@@ -4,12 +4,20 @@ using namespace std;
 
 long long int mod=10000000000;
 
-long long int uzeri(int a, int b){
-	long long int say=1;
-	for(int i = 1;i<=b;i++){
-		say=say*a % mod;
+__int128 uzeri(int a, int b){
+	if(b==0){
+		return 1;
 	}
-	return say;
+	if(b==1){
+		return a;
+	}
+	__int128 say=uzeri(a,b/2);
+	if(b%2==1){
+		return say*say*a %mod;
+	}
+	else{
+		return say*say %mod;
+	}
 }
 
 
