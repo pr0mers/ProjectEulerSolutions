@@ -1,5 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
 
 //Dear programmer:
 //When I wrote this code, only god and
@@ -13,6 +11,9 @@ using namespace std;
 //
 // total_hours_wasted_here = 2.5;
 //
+
+#include <bits/stdc++.h>
+using namespace std;
 
 string str="123456789";
 int elemansayisi[20];
