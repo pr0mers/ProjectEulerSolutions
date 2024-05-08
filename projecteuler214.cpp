@@ -1,6 +1,3 @@
-/// it takes aprox. 100secs will try to reduce it to 1 min
-
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -34,8 +31,8 @@ long long int asalmi(long long int x){
 	if(x==2){
 		return 1;
 	}
-	for(long long int i =2;i*i<=x;i++){
-		if(x%i==0){
+	for(long long int i =0;asallar[i]*asallar[i]<=x;i++){
+		if(x%asallar[i]==0){
 			return 0;
 		}
 	}
