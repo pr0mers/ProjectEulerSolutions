@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-vector<string>v;
 int dene(int n){
 	string x=to_string(n);
 	sort(x.begin(),x.end());
